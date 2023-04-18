@@ -1,0 +1,13 @@
+1. Busca todos los archivos tar que tengas en tu máquina.
+2. Dime cuántos gigas tienes libres en tu disco.
+3. Tienes un archivo en tu nativa Windows y lo copias a tu escritorio de Ubuntu.
+
+
+--------------------------------------------
+
+clase B
+servidor web - www.ejemplo.com
+www.ejemplo.es
+DHCP
+DNS
+las dos redes se comunican

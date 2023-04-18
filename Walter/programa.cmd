@@ -1,0 +1,62 @@
+@echo OFF
+setlocal enabledelayedexpansion
+title programa cmd
+
+:INICIO
+
+
+ECHO.
+ECHO.
+
+ECHO MENU
+ECHO 1) MOSTRAR TODOS LOS DATOS
+ECHO 2) MOSTRAR LA CANTIDAD DE ALUMNOS
+ECHO 3) BUSCAR ALUMNO POR CÓDIGO
+ECHO 4) BUSCAR UN NOMBRE QUE INICIE CON LA LETRA "C"
+ECHO 5) CREAR UN ARCHIVO APARTE QUE CONTENGA TODOS LOS CARLOS QUE ENCUENTRE
+ECHO 6) SALIR
+
+SET /P X=SELECCIONE UNA OPCION [1-6]:
+IF "%X%"=="1" GOTO OPCION1
+IF "%X%"=="2" GOTO OPCION2
+IF "%X%"=="3" GOTO OPCION3
+IF "%X%"=="4" GOTO OPCION4
+IF "%X%"=="5" GOTO OPCION5
+IF "%X%"=="6" GOTO OPCION6
+
+:OPCION1
+ECHO.
+TYPE DatosAlumnos.txt
+ECHO.
+GOTO INICIO
+
+:OPCION2
+ECHO.
+SET C=0
+FOR /F %%X IN (DatosAlumnos.txt) do (
+	FOR %%Y IN (%%X) DO (
+		IF /I "%%Y"=="CARLOS" SET /A C=!C!+1
+	)
+)
+ECHO La cantidad de alumnos es: %C%
+ECHO.
+GOTO INICIO
+
+:OPCION3
+ECHO.
+TYPE DatosAlumnos.txt
+ECHO.
+GOTO INICIO
+
+:OPCION4
+
+:OPCION5
+
+:OPCION6
+exit
+
+for /R %%x in (*.txt) do
+(
+	echo %c% > archivos.txt 
+	
+)
