@@ -34,24 +34,39 @@ GOTO INICIO
 ECHO.
 SET C=0
 FOR /F %%X IN (DatosAlumnos.txt) do (
-	FOR %%Y IN (%%X) DO (
-		IF /I "%%Y"=="CARLOS" SET /A C=!C!+1
-	)
+	SET /A C=!C!+1
 )
-ECHO La cantidad de alumnos es: %C%
+ECHO La cantidad de alumnos es: !C!
 ECHO.
 GOTO INICIO
 
 :OPCION3
 ECHO.
-TYPE DatosAlumnos.txt
+SET /P X=INTRODUZCA CODIGO: 
+ECHO.
+FOR /F "DELIMS=" %%Y IN (DatosAlumnos.txt) DO (
+	
+	ECHO %%Y | FIND "%X%"	
+	REM IF "%X%"=="%%Y" ECHO %%Y
+)
 ECHO.
 GOTO INICIO
 
 :OPCION4
-
+REM RECORRER UN ARCHIVO CON DATOS
+FOR /F "DELIMS=" %%X IN (DatosAlumnos.txt) DO (
+	ECHO %%X 
+	TIMEOUT /T 1 > NUL
+)
 :OPCION5
-
+ECHO.
+FOR /F "DELIMS=" %%X IN (DatosAlumnos.txt) DO (
+	 	ECHO CARLOS | FIND "CARLOS"
+REM FIND "CARLOS" DatosAlumnos.txt | ECHO "CARLOS" >> ArchivoCarlos.txt
+)
+ECHO.
+pause
+GOTO INICIO
 :OPCION6
 exit
 
@@ -59,4 +74,12 @@ for /R %%x in (*.txt) do
 (
 	echo %c% > archivos.txt 
 	
+)
+
+ECHO.
+SET C=0
+FOR /F "DELIMS=" %%X IN (DatosAlumnos.txt) do (
+	FOR %%Y IN (%%X) DO (
+		IF /I "%%Y"=="CARLOS" SET /A C=!C!+1
+	)
 )
