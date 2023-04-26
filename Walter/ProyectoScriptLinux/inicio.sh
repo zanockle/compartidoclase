@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 # Autor: Marcos García
 # Fecha: 18/04/2023
 while true; do
@@ -31,7 +31,7 @@ case $opcion in
 		echo "------------------------"
 		git config user.name
 		git config user.email 
-		git config user.password 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
+		git config user.password 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
 		read -rsp $'\nPress enter to continue...'
 	;;
 3)
@@ -54,7 +54,7 @@ case $opcion in
 		clear
 		echo "5) CONFIGURACION REPOSITORIO REMOTO"
 		echo "------------------------"
-		git remote add origin "https://github.com/zanockle/ProyectoScriptLinux.git"
+		git remote add origin "https://github.com/zanockle/compartidoclase.git"
 		read -rsp $'\Press enter to continue...'
 	;;
 6)
