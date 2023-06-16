@@ -99,4 +99,8 @@ Ejemplo1: Implementar una clase con metodos para calcular area y perimetro circu
 Ejemplo2: Implementar una clase con atributos, constructor, metodos set y get, toString
 Ejemplo3: Resolver el problema del menu de alumnos con poo.
 Ejemplo4: Destruir un objeto
+Ejemplo5: Herencia
+Ejemplo6: Polimorfismo Figuras Geometricas
+          Generar 100 objetos aleatorios
+Ejemplo7: Herencia Multiple (De 2 a mas padres)
 ===============================================================================

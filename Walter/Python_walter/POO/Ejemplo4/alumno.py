@@ -28,3 +28,7 @@ class Alumno:
       
       def __del__(self):
           print('Objeto Destruido')
+
+      @staticmethod
+      def centro_estudios():
+          return 'CAMPUSFP'
