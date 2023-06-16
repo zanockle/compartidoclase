@@ -56,4 +56,65 @@ CREATE TABLE practicas.rep_detalle_pedido (
 INSERT INTO practicas.rep_detalle_pedido (fechaentrega,idproducto,unidades,idpedido)
 VALUES ('2023-01-05',1,2,2);
 
+/*INTRODUCIR VALORES*/
+INSERT INTO practicas.rep_clientes (dni, dob, email) 
+VALUES ('41544984', '1980-05-10', 'ejemplo@correo.com');
 
+INSERT INTO practicas.rep_telefonos (idcliente, tfno)
+VALUES (2, '666666');
+
+INSERT INTO practicas.rep_pedidos (idcliente)
+VALUES (2);
+
+INSERT INTO practicas.rep_detalle_pedido (fechaentrega,idproducto,unidades,idpedido)
+VALUES ('2023-01-20',1,6,3);
+
+
+/*CONSULTAR VALORES*/
+SELECT * FROM practicas.rep_clientes;
+SELECT * FROM practicas.rep_telefonos;
+SELECT * FROM practicas.rep_pedidos;
+
+/*Dado un cliente, qué pedidos ha realizado y su importe total*/
+
+SELECT pr.nombre, d.fechaentrega, sum(d.unidades*pr.precio) as total_total
+from practicas.rep_clientes c
+inner join practicas.rep_pedidos p on c.idcliente=p.idcliente
+inner join practicas.rep_detalle_pedido d on p.idpedido=d.idpedido
+inner join practicas.rep_productos pr on d.idproducto=pr.idproducto
+where c.idcliente=1
+group by d.fechaentrega,pr.nombre;
+
+/*El importe total de venta por arroz y por leche*/
+SELECT p.nombre,sum(p.precio*dp.unidades) as total
+from practicas.rep_productos p
+inner join practicas.rep_detalle_pedido dp on p.idproducto=dp.idproducto
+where p.nombre in ('arroz','leche')
+group by p.nombre;
+
+/*Cuántos kilos de arroz se reparten cada día..*/
+SELECT dp.fechaentrega as fecha,sum(dp.unidades) as total
+from practicas.rep_productos p
+inner join practicas.rep_detalle_pedido dp on p.idproducto=dp.idproducto
+where p.nombre='arroz'
+group by dp.fechaentrega;
+
+CREATE FUNCTION practicas.unidades_max_5()
+  RETURNS TRIGGER AS $$
+BEGIN
+  IF NEW.idproducto = 1 AND NEW.unidades > 5 THEN
+    RAISE EXCEPTION 'Las unidades no pueden ser mayores que 5 para el idproducto 1';
+  END IF;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+
+CREATE TRIGGER check_unidades_max_5
+BEFORE INSERT OR UPDATE ON practicas.rep_detalle_pedido
+FOR EACH ROW
+EXECUTE FUNCTION unidades_max_5();
+
+
+INSERT INTO practicas.rep_detalle_pedido (fechaentrega,idproducto,unidades,idpedido)
+VALUES ('2023-01-21',1,15,1);
