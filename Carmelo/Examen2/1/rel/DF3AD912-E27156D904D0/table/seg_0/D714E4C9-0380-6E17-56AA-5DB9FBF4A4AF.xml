@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D714E4C9-0380-6E17-56AA-5DB9FBF4A4AF" schemaObject="F8869808-BC09-7FA2-C12B-F8CA37493CB2" name="OFERTASDEEMPLEO">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>OFERTASDEEMPLEO</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:49 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDOFERTA" id="C84C75BD-D870-3250-9AB0-1BB8E62502D5">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>OFERTASDEEMPLEO</sourceObjSchema>
+<sourceObjName>IDOFERTA</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;OFERTASDEEMPLEO_SEQ&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITULO" id="E80C79B8-A089-DCD3-773A-F5FC10226F08">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>OFERTASDEEMPLEO</sourceObjSchema>
+<sourceObjName>TITULO</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="72D373AA-5628-ABF4-32DB-2B32D7F5A0FB">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>OFERTASDEEMPLEO</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPRESA" id="F979A28A-8941-1886-0842-F8C2F399B02E">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>OFERTASDEEMPLEO</sourceObjSchema>
+<sourceObjName>EMPRESA</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHAPUBLICACION" id="F70AF382-07E9-A930-4573-B0E72255E7C7">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>OFERTASDEEMPLEO</sourceObjSchema>
+<sourceObjName>FECHAPUBLICACION</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD" id="F2490187-F592-B05B-705D-990303CBAFD4">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>OFERTASDEEMPLEO</sourceObjSchema>
+<sourceObjName>CIUDAD</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86FCEDBB-06C6-F5CB-AE3F-30FC1601AA57" schemaObject="F8869808-BC09-7FA2-C12B-F8CA37493CB2" name="OFERTASDEEMPLEO_PK">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008408</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:51 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C84C75BD-D870-3250-9AB0-1BB8E62502D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

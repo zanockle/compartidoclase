@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="OFERTASDEEMPLEO" directorySegmentName="seg_0" id="D714E4C9-0380-6E17-56AA-5DB9FBF4A4AF">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:49 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<schemaObject>F8869808-BC09-7FA2-C12B-F8CA37493CB2</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AFAEBBB6-0594-83CC-9C9B-9557A347C92A</segment>
+<tableSpace>306E5FF7-7028-3C10-13C4-7828FAA73BC3</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="72D373AA-5628-ABF4-32DB-2B32D7F5A0FB">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDOFERTA" id="C84C75BD-D870-3250-9AB0-1BB8E62502D5">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<defaultValue>&quot;SYSTEM&quot;.&quot;OFERTASDEEMPLEO_SEQ&quot;.&quot;NEXTVAL&quot;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TITULO" id="E80C79B8-A089-DCD3-773A-F5FC10226F08">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CIUDAD" id="F2490187-F592-B05B-705D-990303CBAFD4">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHAPUBLICACION" id="F70AF382-07E9-A930-4573-B0E72255E7C7">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPRESA" id="F979A28A-8941-1886-0842-F8C2F399B02E">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="OFERTASDEEMPLEO_PK" id="86FCEDBB-06C6-F5CB-AE3F-30FC1601AA57">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:51 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<schemaObject>F8869808-BC09-7FA2-C12B-F8CA37493CB2</schemaObject>
+<segment>B1A2CCBE-D338-C6BB-94F9-5C8810CD9811</segment>
+<tableSpace>306E5FF7-7028-3C10-13C4-7828FAA73BC3</tableSpace>
+<indexSegment>B1A2CCBE-D338-C6BB-94F9-5C8810CD9811</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

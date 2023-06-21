@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EEC5EF2E-0969-7582-3DCB-FCC52D117D6D" schemaObject="F8869808-BC09-7FA2-C12B-F8CA37493CB2" name="CANDIDATURAS">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>CANDIDATURAS</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:49 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCANDIDATURA" id="01C7305B-9981-F178-BFFF-EFB1EE424B52">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>CANDIDATURAS</sourceObjSchema>
+<sourceObjName>IDCANDIDATURA</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;CANDIDATURAS_SEQ&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDOFERTA" id="7CD12090-F5DD-145D-C0A3-CAE84E6EE6B2">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>CANDIDATURAS</sourceObjSchema>
+<sourceObjName>IDOFERTA</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09B0EB8C-5036-5E2A-FE0E-AD543540E6E2" referredColumn="C84C75BD-D870-3250-9AB0-1BB8E62502D5"/>
+</associations>
+</Column>
+<Column name="IDASPIRANTE" id="D3878CCD-C556-4FC5-9004-D07A192BFABB">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>CANDIDATURAS</sourceObjSchema>
+<sourceObjName>IDASPIRANTE</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8817CCB-30B4-7C0E-DEA4-C68FEE20CF98" referredColumn="E3536339-80BD-D117-794E-E16841D2039C"/>
+</associations>
+</Column>
+<Column name="ESTADO" id="298059AA-2F2D-99E4-6F02-301BB0F17792">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>CANDIDATURAS</sourceObjSchema>
+<sourceObjName>ESTADO</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<constraintName>CHK_ESTADO</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Finalista&apos;" description=""/>
+<valueDef value="&apos;Pendiente&apos;" description=""/>
+<valueDef value="&apos;Preseleccionado&apos;" description=""/>
+<valueDef value="&apos;Seleccionado&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5011D9E6-14BF-F1BB-4970-00A48DC0EAC6" schemaObject="F8869808-BC09-7FA2-C12B-F8CA37493CB2" name="CANDIDATURAS_PK">
+<sourceConnName>examen</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008413</sourceObjName>
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:51 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01C7305B-9981-F178-BFFF-EFB1EE424B52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4766177A-12A7-B246-F334-B2FE4969B477" name="SYS_C008414">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:51 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CD12090-F5DD-145D-C0A3-CAE84E6EE6B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0EE85F2-3914-613D-F045-4984D1005263" name="SYS_C008415">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:14:51 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3878CCD-C556-4FC5-9004-D07A192BFABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

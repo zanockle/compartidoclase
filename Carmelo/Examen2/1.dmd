@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="1" id="796E5922-C858-D8F8-DA54-30F04611D1D8" version="3.5">
+<createdBy>Curso Tarde</createdBy>
+<createdTime>2023-06-21 10:11:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>796E5922-C858-D8F8-DA54-30F04611D1D8</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="446AF361-5CE9-E7CF-5FC9-CCD9E56FA93D">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>
