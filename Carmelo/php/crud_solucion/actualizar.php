@@ -4,9 +4,15 @@ global $conn;
 include("header.php");
 include("footer.php");
 require ("conexion.php");
-$result=$conn->query("UPDATE comentarios SET comentario='$_POST[comentario]' WHERE id=$_POST[id]");
-echo ("<p>Comentario actualizado correctamente</p>");
-echo ("<a href='mostrar.php'>Consultar cambios</a>");
-
 ?>
+<form action="insert.php" method="post">
+    <div class="mb-3">
+        <label for="idcomentario" class="form-label">Id de comentario</label>
+        <input type="number" class="form-control" id="idcomentario" name="id">
+    </div>
+    <div class="mb-3">
+        <label for="comentario" class="form-label">Comentario</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar comentario</button>
+</form>
 
